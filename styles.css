@@ -1,57 +1,166 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  /* Sections */
-  section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  #about {
-    background-color: #fff;
-  }
-  
-  #projects {
-    background-color: #e3e3e3;
-  }
-  
-  #contact {
-    background-color: #fff;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-  }
-  
+@font-face { 
+  font-family: 'Roboto'; 
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+} 
+
+body{
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+a,.des, .footer{
+  font-size: 18px;
+  color:#F9FAF8;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+.logo{
+  font-size: 24px;
+  color:#F9FAF8;
+  font-weight: 700;
+}
+.header, .footer{
+  background-color: #1F2937;
+}
+
+button{
+  background-color: #5783db;
+}
+.resume{
+  background-color: #749ad8;
+}
+button{
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.header button{
+  border: none;
+  margin-top: 16px;
+  color:#F9FAF8;
+  font-weight: 800;
+}
+.content{
+  background-color: #E5E7EB;
+  font-size: 36px;
+  color: #1F2937;
+  padding-left: 256px;
+  padding-right: 256px;
+  padding-bottom: 52px;
+  padding-top: 52px;
+}
+.quote{
+  font-style: italic;
+}
+.author{
+  text-align: right;
+  font-size:24px;
+  font-weight: bold;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-bottom: 52px;
+}
+.header .top{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+.header .bottom{
+  padding: 32px;
+  display: flex;
+  gap:16px;
+} 
+.header .bottom .left{
+  /* display: flex;
+  flex-direction: column; */
+  flex: 1;
+}
+
+h2{
+  font-size: 40px;
+  padding: 30px;
+}
+img{
+  flex: 1;
+  width: 300px;
+  height: auto;
+}
+
+ul{
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-awards{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 56px;
+}
+.info{
+  display: flex;
+  gap: 16px;
+}
+.projects-awards img{
+  flex: 1;
+  width: auto;
+  height: 150px;
+}
+.one{
+  flex: 1;
+}
+.resume{
+  margin-left: 128px;
+  margin-right: 128px;
+  margin-bottom: 52px;
+  margin-top: 52px;
+  border-radius: 8px;
+}
+
+.resume{
+  color:#F9FAF8;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resume .left{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.buttons button{
+  border-style:solid;
+  border-color: #F9FAF8;
+  color:#F9FAF8;
+  font-weight: bold;
+}
+h3{
+  margin: 0;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}

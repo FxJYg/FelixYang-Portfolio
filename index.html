@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Felix Yang's Personal Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-
-  <!-- Header Section -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="awards">Awards</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- About Section -->
-  <section id="about">
-    <h1>About Me</h1>
-    <p>Hi, I'm Felix Yang! I'm a software engineering student at the University of Waterloo. I have strong passion towards the theory of mathematics and computer science!</p>
-  </section>
-
-  <section id="awards">
-    <h1>My Awards</h1>
-  </section>
-  <!-- Projects Section -->
-  <section id="projects">
-    <h1>My Projects</h1>
-    <p>Here are some of the projects I've worked on.</p>
-    <!-- You will add project cards later -->
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h1>Contact</h1>
-    <p>Feel free to get in touch with me!</p>
-    <!-- You can add a form here later -->
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>© 2024 Felix's Portfolio. All rights reserved.</p>
-  </footer>
-
+    <div class="header">
+        <div class="top">
+            <div class="logo">Felix Yang's Personal Website</div>
+            <div class="links">
+                <ul>
+                    <li><a href="sections/about.html">About</a></li>
+                    <li><a href="sections/awards.html">Awards</a></li>
+                    <li><a href="sections/projects.html">Projects</a></li>
+                    <li><a href="sections/courses.html">Courses</a></li>                   
+                </ul>
+            </div>
+        </div>
+        <div class ="bottom">
+            <div class = "left">
+                <h1>Hi, I'm Felix Yang!</h1>
+                <div class="des">I'm a software engineering student at the University of Waterloo. Currently seeking summer 2025 interships!</div>        
+                <button><a href="sections/coures.html">View my courses</a></button>
+            </div>
+            <img src="images/koala.jpg" alt="this is a placeholder for an image">
+        </div>
+    </div>
+    <div class="projects-awards">
+        <h2>My Projects and Awards</h2>
+        <div class="info">
+        <div class="one">
+            <img src="images/rasp.png" alt="image 1">
+            <h4>Raspberry Pi Drum Synthesizer</h4>
+            <div class="text">Assembled a drum machine with a Raspberry Pi Zero W, utilizing piezo sensors and arcade buttons. Recording and playback functionality were implemented using Python libraries such as Pygame and Pydub.</div>
+        </div>
+        <div class="one">
+            <img src="images/python.jpeg" alt="image 2">
+            <h4>Python Media Player</h4>
+            <div class="text">Developed and designed the user interface for a media player using Tkinter. Designed and implemented basic media controls such as Play, Pause, Stop, Progress Bar, and Fullscreen mode
+                using Tkinter.</div>
+        </div>
+        <div class="one">
+            <img src="images/cemc.png" alt="image 3">
+            <h4>Euclid Nation Champion 2024</h4>
+            <div class="text">Participated in the Euclid Math Contest from CEMC and Received National Student Champion Plaque with a score of 98/100.</div>
+        </div>
+        <div class="one">
+            <img src="images/phys.avif" alt="image 4">
+            <h4>Physics Bowl Gobal Top Score 2023</h4>
+            <div class="text">Participated in the Physics Bowl Contest from AAPT and Awarded Global Top Score(4th Indiviual Globally) with a score of 38/40.</div>
+        </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="quote">Perfection is not attainable but if we chase perfection we can catch excellence.</div>
+        <div class="author">-Vince Lombardi</div>
+    </div>
+    <div class="resume">
+        <div class="left">
+            <h3>Here is my current resume!</h3>
+            <div class="desc">
+                Click on the right to request access for my current resume.
+            </div>
+        </div>
+        <div class="buttons"><button>Resume</button></div>
+    </div>
+    <div class="footer">
+        Copyright © Felix's Portfolio 2025
+    </div>
 </body>
 </html>
